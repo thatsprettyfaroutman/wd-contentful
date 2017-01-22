@@ -28,12 +28,16 @@
   transform-origin: center center;
 }
 
-.Hero__title span:nth-child(7),
-.Hero__title span:nth-child(8),
-.Hero__title span:nth-child(9) {
+.Hero__title span:nth-child(1),
+.Hero__title span:nth-child(2) {
   color: #3498db;
   color: #f1c40f;
 }
+
+.Hero__title span:nth-child(3) {
+  /*color: #333;*/
+}
+
 
 .Hero--animating .Hero__title span {
   transition-property: transform, opacity;

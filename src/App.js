@@ -29,7 +29,7 @@ class App extends Component {
       <Container>
         <Row heroHeight>
           <Col>
-            <Hero title="Wunderdog" />
+            <Hero title="IOCONSULTING" />
           </Col>
         </Row>
         <Row tag="ul" style={{overflow:'hidden'}}>
