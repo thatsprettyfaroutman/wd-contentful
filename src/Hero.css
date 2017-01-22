@@ -1,0 +1,42 @@
+.Hero {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  padding-top: 200px;
+  min-height: 100%;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Hero__title {
+  display: flex;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  font-family: Heebo, sans-serif;
+  font-size: 122px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 1;
+  user-select: none;
+}
+
+.Hero__title span {
+  transform-origin: center center;
+}
+
+.Hero__title span:nth-child(7),
+.Hero__title span:nth-child(8),
+.Hero__title span:nth-child(9) {
+  color: #3498db;
+  color: #f1c40f;
+}
+
+.Hero--animating .Hero__title span {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.2, 1);
+  transition-duration: 1s;
+}

@@ -1,0 +1,25 @@
+.LoadingImage,
+.LoadingImage__thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.LoadingImage {
+  overflow: hidden;
+}
+
+.LoadingImage__thumb {
+  opacity: 0;
+  filter: blur(1px);
+  transition: opacity 400ms ease-in-out;
+}
+
+.LoadingImage--useThumb .LoadingImage__thumb {
+  opacity: 1;
+}

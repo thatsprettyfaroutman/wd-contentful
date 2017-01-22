@@ -1,0 +1,52 @@
+.Entry {
+}
+
+.Entry__top {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 600px;
+}
+
+.Entry__top .LoadingImage {
+  position: absolute;
+}
+
+.Entry__top h1 {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  font-family: Heebo, sans-serif;
+  text-transform: uppercase;
+}
+
+.Entry__backLink {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: Heebo, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.Entry__backLink:hover {
+  background-color: #f1c40f;
+}
+
+.Entry__body {
+  padding: 100px 40px;
+  color: #fff;
+  font-family: Heebo, sans-serif;
+  font-size: 24px;
+}

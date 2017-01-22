@@ -1,0 +1,53 @@
+.Card {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-height: 200px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  justify-content: flex-start;;
+  align-items: flex-end;
+  text-decoration: none;
+  opacity: 0.2;
+  transform: translate3d(0, 0, 0);
+  transition-property: opacity, transform;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.2, 1);
+}
+
+.Card:hover {
+  transition-duration: 200ms;
+  opacity: 1;
+}
+
+.Card--loading {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+}
+
+.Card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: inherit;
+}
+
+.Card:hover .Card__image {
+  opacity: 1;
+}
+
+.Card__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Heebo, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}

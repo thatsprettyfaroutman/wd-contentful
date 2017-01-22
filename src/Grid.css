@@ -1,0 +1,35 @@
+.Grid__container,
+.Grid__fullHeight {
+  height: 100%;
+}
+
+.Grid__fullWidth {
+  width: 100%;
+}
+
+.Grid__heroHeight {
+  height: calc(100% - 200px)
+}
+
+.Grid__textWidth {
+  max-width: 800px;
+}
+
+.Grid__centerItems {
+  justify-content: center;
+}
+
+
+.Grid__row,
+.Grid__col {
+  display: flex;
+  flex: 1;
+}
+
+.Grid__row {
+  flex-direction: row;
+}
+
+.Grid__col {
+  flex-direction: column;
+}
